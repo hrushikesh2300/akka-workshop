@@ -48,6 +48,7 @@ public class OrderEndpoint {
         if (req.lines() == null || req.lines().isEmpty()) {
             throw HttpException.badRequest("order must contain at least one line");
         }
+        var seenSkus = new java.util.HashSet<String>();
         for (OrderLine line : req.lines()) {
             if (line.sku() == null || line.sku().isBlank()) {
                 throw HttpException.badRequest("line sku is required");
@@ -57,6 +58,9 @@ public class OrderEndpoint {
             }
             if (line.unitPriceCents() < 0) {
                 throw HttpException.badRequest("line unitPriceCents cannot be negative: " + line.sku());
+            }
+            if (!seenSkus.add(line.sku())) {
+                throw HttpException.badRequest("duplicate sku in order lines: " + line.sku());
             }
         }
     }
