@@ -1,0 +1,10 @@
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\api\CustomerEndpoint.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\api\PreferencesEndpoint.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\commands\CustomerCommands.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\commands\PreferencesCommands.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\entities\CustomerEntity.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\entities\CustomerPreferencesEntity.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\events\CustomerEvent.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\model\CustomerPreferences.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\domain\model\CustomerState.java
+D:\akka-workshop-practice\src\main\java\com\hrushi\firstakka\views\CustomerView.java
